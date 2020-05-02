@@ -1,2 +1,2 @@
 # shinsai
-Public
+Created for sharing code on reddit.
