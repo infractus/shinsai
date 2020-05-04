@@ -1,0 +1,34 @@
+﻿game_setup →
+	assign_positions
+	start_play → 
+		play_game →
+			begin_hand → 
+				set_up_hand →
+					set_points
+					sort_hand
+				passing_cards →
+					cards_to_pass →
+						choose_pass →
+							pick_cards_prompts
+							pick_cards_pc →
+								pick_3_cards
+					pass_cards →
+						pass_left
+						pass_right
+						pass_across
+				play_hand →
+					lead_round →
+						first_turn
+						take_turn →
+							choose_viable_cards
+							take_turn_pc →
+								pc_leading
+								pc_not_leading →
+									determine_highest_card
+							take_turn_human 
+						resolve_turn
+					continue_round
+					resolve_round →
+						add_points
+					check_shoot_the_moon
+			determine_winner
