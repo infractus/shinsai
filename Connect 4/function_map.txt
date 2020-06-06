@@ -1,0 +1,30 @@
+Connect4
+__init__
+run_game ->
+	game_setup ->
+		display_welcome_screen
+		select_num_players
+		select_player ->
+			returning user ->
+				select_name
+	check_tracking
+	display_menu ->
+		start_tournament ->
+			show_tournament_record
+			start_play ->
+				show_tournament_results
+				new_game ->
+					show_who_first
+					play_game ->
+						update_screen ->
+							check for clicks
+							draw_board
+						take_turn ->
+							take_turn_computer->
+								check_for_wins
+							take_turn_human
+							animate_result
+						game_over
+				show_record
+		view_game_stats
+		view_player_stats
